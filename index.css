@@ -5,7 +5,15 @@ margin: 0;
 padding: 0;
 box-sizing: 0;
 }
+body-html {
+  height: 100%; /* Đảm bảo chiều cao toàn bộ trang */
+}
+a {
+  text-decoration: none;
+}
 .chucnang {
+  color: #333;
+  font-size: 18px;
   padding: 10px;
   position: fixed;
   top: 0%;
@@ -16,11 +24,13 @@ box-sizing: 0;
   background-color: #ffffff;
   z-index: 1000;
 }
-.link-chucnang {
+.linkchucnang {
+    text-decoration: none;
+    background-color: #f4f4f4;
     margin-right: 1%;
     gap: 25px;
     top: 100%;
-    list-style-type: none;
+    list-style-type: none; /* Loại bỏ dấu chấm cho danh sách không có thứ tự */
   display: flex;
   justify-content: flex-end;
 }
@@ -28,11 +38,11 @@ header {
     width: 100vw;
     height: 100vh;
     background-image: url(./img/bg.jpeg);
-    background-position: bottom;
-    background-size: cover;
-    display: flex;
+    background-position: bottom; /* vị trí nền */
+    background-size: cover; /* kích cỡ nên */
+    display: flex; /* căn chỉnh các phần tử */
     align-items: flex-end;
-    justify-content: center;
+    justify-content: center; /* căn chỉnh các ptu theo chiều ngang */
 }
 .header-content {
     font-size: 45px;
@@ -40,15 +50,15 @@ header {
     position: absolute;
     left: 3%;
     top: 40%;
-    transform: translateY(-50%);
+    transform: translateY(-50%); /* dịch chuyển các phần tử */
   
 }
 .p {
     color: aliceblue;
-    font-size: 20px;
+    font-size: 20px; /* kích cỡ */
     position: absolute;
-    left: 3%;
-    top: 50%;
+    left: 3%; /* trái 3% */
+    top: 50%; /* trên 50% */
 }
 .inbgr {
     padding: 12px 30px; /* Tạo khoảng cách lớn hơn xung quanh chữ */
@@ -57,6 +67,7 @@ header {
   background-color: #f0a500; /* Màu nền của nút */
   border: none; /* Không có đường viền */
   border-radius: 5px; /* Góc bo tròn cho nút */
+
   cursor: pointer; /* Con trỏ khi hover lên nút */
   text-align: center; /* Căn giữa nội dung chữ */
   display: inline-block; /* Cho phép nút có kích thước phù hợp với chữ */
@@ -65,4 +76,22 @@ header {
     position:absolute;
     left: 3%;
     top: 58%;
+}
+.logo {
+  list-style-type: none; /* Loại bỏ dấu chấm */
+    margin-right: 1150px; /* khoảng cách giữa các liên kết */
+}
+selector {
+  background-image: url('logo-mxh.png');  /* Đặt logo mạng xã hội vào nền */
+  background-position: left top;           /* Căn logo vào góc trái trên cùng */
+  background-repeat: no-repeat;           /* Đảm bảo logo không bị lặp lại */
+  background-size: 50px 50px;             /* Điều chỉnh kích thước logo (có thể thay đổi kích thước theo nhu cầu) */
+}
+.logono1 {
+  width : 100%;
+  height: 0%;                     /* Chiều cao của phần tử */
+  background-color: none;       /* Màu nền của phần tử */
+  background-image: url('logo-mxh.png'); /* Đặt logo vào nền */
+  background-size: 400px 400px;        /* Kích thước logo nhỏ, bạn có thể điều chỉnh kích thước logo */
+  padding: 20px;
 }
