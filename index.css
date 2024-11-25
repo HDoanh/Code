@@ -88,10 +88,12 @@ selector {
   background-size: 50px 50px;             /* Điều chỉnh kích thước logo (có thể thay đổi kích thước theo nhu cầu) */
 }
 .logono1 {
-  width : 100%;
-  height: 0%;                     /* Chiều cao của phần tử */
-  background-color: none;       /* Màu nền của phần tử */
+  width : 120px;
+  height: 0,1px;                     /* Chiều cao của phần tử */
+  background-color: rgb(103, 98, 98);       /* Màu nền của phần tử */
   background-image: url('logo-mxh.png'); /* Đặt logo vào nền */
   background-size: 400px 400px;        /* Kích thước logo nhỏ, bạn có thể điều chỉnh kích thước logo */
   padding: 20px;
-}
+  position: absolute; /* Đặt phần tử ở vị trí tuyệt đối */
+  left: 0; /* Đẩy phần tử về phía bên trái */
+}     
