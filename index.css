@@ -6,14 +6,19 @@ padding: 0;
 box-sizing: 0;
 }
 body-html {
+  overflow-x: hidden;
   height: 100%; /* Đảm bảo chiều cao toàn bộ trang */
+  width :100%;
+}
+html {
+  scroll-behavior: smooth;
 }
 a {
   text-decoration: none;
 }
 .chucnang {
   color: #333;
-  font-size: 18px;
+  font-size: 17px;
   padding: 10px;
   position: fixed;
   top: 0%;
@@ -96,4 +101,86 @@ selector {
   padding: 20px;
   position: absolute; /* Đặt phần tử ở vị trí tuyệt đối */
   left: 0; /* Đẩy phần tử về phía bên trái */
-}     
+}
+section {
+  margin: 0;
+  height: 60vh; /* Chiều cao trang */
+  position: relative; /* Để position absolute của phần tử con tính từ body */
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  text-align: center;
+}
+.section1 {
+  position: absolute;
+  top: 20%; /* Đưa phần tử tới giữa theo chiều dọc */
+  left: 50%; /* Đưa phần tử tới giữa theo chiều ngang */
+  transform: translate(-50%, -50%); /* Dịch chuyển phần tử lại để căn chính xác vào giữa */
+  font-size: 24px;
+  padding: 100px; /* Khoảng cách giữa văn bản và viền của phần tử */
+  background-color: none;
+}
+.container{
+  width: 100vw; /* Chiều rộng của phần tử .container sẽ chiếm 80% chiều rộng cửa sổ */
+  height: 10vh; /* Chiều cao sẽ chiếm 60% chiều cao cửa sổ */
+  position: relative;
+  top:-58%;
+  display: flex; /* Sử dụng Flexbox */
+  justify-content: space-evenly; /* Phân phối đều các phần tử theo chiều ngang */
+  align-items: flex-start; /* Căn các phần tử theo chiều dọc, căn lên đầu */
+  flex-wrap: wrap; /* Đảm bảo các phần tử sẽ tự động xuống dòng nếu không đủ không gian */
+  gap: 20px; /* Khoảng cách giữa các phần tử */
+}
+.item {
+  position: relative; /* Đảm bảo phần tử có thể được căn chỉnh tương đối */
+  top: 10%; /* Đưa phần tử lên cao hơn một chút so với vị trí ban đầu */
+  background-color: none; /* Màu nền cho mỗi phần tử */
+  padding: 30px; /* Khoảng cách xung quanh nội dung */
+  border-radius: 10px; /* Bo góc cho các phần tử */
+  width: 250px; /* Độ rộng của mỗi phần tử */
+  text-align: center; /* Căn giữa văn bản */
+}
+.item i {
+  font-size: 60px; /* Kích thước của các icon */
+  color: black; /* Màu của các icon */
+}
+.item h5 {
+  margin-top: 30px; /* Khoảng cách giữa icon và tiêu đề */
+}
+.item p {
+  margin-top: 20px; /* Khoảng cách giữa tiêu đề và nội dung */
+  font-size: 16px;
+  color: black;
+}
+.section02 {
+  background-color: #f4f4f4;
+}
+.container02 {
+  width: 110vw; /* Chiều rộng của phần tử .container sẽ chiếm 80% chiều rộng cửa sổ */
+    height: 60vh; /* Chiều cao sẽ chiếm 60% chiều cao cửa sổ */
+  padding: 20px;
+}
+.container02 h5 {
+  font-size: 20px;
+  position: relative; /* Đảm bảo phần tử có thể được căn chỉnh tương đối */
+  left: -40%; /* Đưa phần tử tới giữa theo chiều ngang */
+  top: -400px; /* Đưa phần tử lên cao hơn một chút so với vị trí ban đầu */
+  background-color: none; /* Màu nền cho mỗi phần tử */
+}
+.container02 p {
+  background-color: #f4f4f4;
+  margin-left: 106px; /* Dịch chuyển phần tử sang phải một chút */
+  margin-top: -370px; /* Đưa phần tử lên cao một chút */
+  margin-right: 0; /* Căn lề phải cho thẻ <p> trong container02 */
+  text-align: justify; /* Căn đều văn bản từ lề trái đến lề phải */
+  width: 100%; /* Đảm bảo thẻ <p> chiếm toàn bộ chiều ngang của phần tử cha */
+}
+.container02 img {
+  background-color: #f4f4f4;
+  margin-left: 500px; /* Dịch chuyển phần tử sang phải một chút */
+  margin-top: 100px; /* Đưa phần tử lên cao một chút */
+  margin-right: 0; /* Căn lề phải cho thẻ <p> trong container02 */
+  text-align: justify; /* Căn đều văn bản từ lề trái đến lề phải */
+}
+.container02 button {
+  
+}
